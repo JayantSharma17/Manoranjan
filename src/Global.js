@@ -1,6 +1,6 @@
 import toast from "react-hot-toast";
 
-export const BaseURL = 'https://moviessite-1.onrender.com/';
+export const BaseURL = 'https://moviessite-1.onrender.com';
 
 export const message = (str) => {
   toast(str,
