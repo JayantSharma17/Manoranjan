@@ -1,0 +1,75 @@
+footer{
+    width: 95vw;
+    /* height: 300px; */
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px;
+}
+footer>div:nth-child(1){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+footer>div:nth-child(1)>div{
+    width: 60px;
+    height: 60px;
+    background-color: rgb(45, 45, 45);
+    border-radius: 300px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+footer>div:nth-child(1)>div>img{
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 300px;
+}
+footer>p:nth-child(2){
+    color: gray;
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+footer>p:nth-child(2)>span{
+    color:  #FF631A;
+}
+
+@media only screen and (max-width: 900px) {
+    footer>p:nth-child(2){
+        font-size: 11px;
+    
+    }
+    footer>div:nth-child(1)>div{
+        width: 40px;
+        height: 40px;
+        background-color: rgb(45, 45, 45);
+        border-radius: 300px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      
+    }
+    footer>div:nth-child(1)>div>img{
+        width: 40px;
+        height: 40px;
+        background-color: rgba(255, 255, 255, 0);
+        border-radius: 300px;
+    }
+    
+   
+}

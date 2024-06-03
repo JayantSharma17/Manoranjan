@@ -1,0 +1,71 @@
+.Modal {
+    position: absolute;
+    top: 0;
+    /* left: 40px;
+    right: 40px;
+    bottom: 40px; */
+    background-color: rgba(0, 0, 0, 0.263);
+    backdrop-filter: blur(10px);
+    width: 100vw;
+    height: 100vh;
+}
+
+.Overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(102, 51, 153, 0);
+}
+
+.mcard {
+    border: 1px solid white;
+    margin-top: 100px !important;
+    padding-bottom: 20px;
+}
+
+.mcard>div {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.mcard>div>button {
+    float: right;
+    margin-top: 20px;
+
+    width: 30px;
+    height: 30px;
+    border-radius: 300px;
+    /* border: 1px solid rgb(255, 255, 255); */
+    outline: none;
+    border: none;
+    overflow: hidden;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.mcard>div>button:hover:hover {
+    cursor: pointer;
+
+
+}
+
+.mcard>div>button:hover>img {
+    width: 20px;
+    height: 20px;
+}
+.privacy-options{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start !important;
+    gap: 20px;
+}

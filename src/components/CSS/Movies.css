@@ -1,0 +1,10 @@
+#movie{
+    width: 95vw;
+    min-height: 80vh;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    margin-top: 10px;
+    background-image: repeating-linear-gradient(45deg, rgba(97,97,97,0.1) 0px, rgba(97,97,97,0.1) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, rgb(22,22,22),rgb(22,22,22));
+
+}

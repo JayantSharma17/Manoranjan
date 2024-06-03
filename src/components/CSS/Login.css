@@ -1,0 +1,96 @@
+.login{
+    width: 95vw;
+    min-height: 80vh;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    margin-top: 10px;
+    background-image: repeating-linear-gradient(45deg, rgba(97,97,97,0.1) 0px, rgba(97,97,97,0.1) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, rgb(22,22,22),rgb(22,22,22));
+
+    /* background-image: url('https://i.etsystatic.com/16884357/r/il/d75ea0/3863352010/il_fullxfull.3863352010_ikgf.jpg'); */
+    background-image: url('../../assets/bg2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.loginDiv{
+    margin-top: 50px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.541);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+}
+.loginDiv>input{
+    width: 90%;
+    margin: 10px;
+    outline: none;
+    border: 0.5px solid rgb(60, 60, 60);
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.79);
+    font-size: 20px;
+    padding-left: 10px;
+    height: 50px;
+    color: white;
+}
+.loginDiv>button{
+    font-size: 20px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    border: 3px solid #FF631A;
+    background-color: transparent;
+    border-radius: 30px;
+    min-width: 50%;
+    margin-top: 30px;
+}
+.loginDiv>button:hover{
+    background-color: #FF631A;;
+ 
+}
+.loginDiv>h1{
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+    margin: 20px;
+
+}
+.loginDiv>p{
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+    margin: 15px;
+    margin-bottom: 30px;
+
+}
+.loginDiv>p>a{
+    color: #FF631A;
+    font-weight: normal;
+    margin: 10px;
+    text-decoration: none;
+
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .loginDiv{
+        margin-top: 50px;
+        width: 90vw;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.541);
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+    }
+   
+}

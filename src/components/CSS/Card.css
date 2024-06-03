@@ -1,0 +1,36 @@
+.wishlistMenu{
+    background-color: rgb(61, 61, 61);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 18vw;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 100;
+    border-radius: 8px;
+    margin-top: 5px;
+    opacity: 0;
+    transition: opacity 5s ease-in-out;
+    padding: 5px;
+}
+.show {
+    opacity: 1;
+}
+@media only screen and (min-width:500px) and (max-width: 750px) {
+    .wishlistMenu{
+        width: 35vw;
+        
+    }
+    
+   
+}
+@media only screen and (max-width: 500px) {
+    .wishlistMenu{
+        width: 40vw;
+        
+    }
+    
+   
+}

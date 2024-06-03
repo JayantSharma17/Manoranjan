@@ -1,0 +1,284 @@
+#carousel {
+    width: 95vw;
+    height: 500px;
+    margin-top: 10px;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#search {
+    position: absolute;
+    /* width: 100vw; */
+    width: 100%;
+    height: 500px;
+    margin-top: 10px;
+    border-radius: 30px;
+    overflow: hidden;
+    /* background-color: rgba(0, 255, 255, 0.482); */
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 10;
+}
+
+#search>div {
+    width: 95vw;
+    height: 100%;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 10;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(59, 59, 59, 0) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.WebCards {
+    width: 100%;
+    height: 500px;
+    border-radius: 30px;
+
+    background-image: url('https://i.ytimg.com/vi/_e9y729xeck/sddefault.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 5;
+}
+
+#searchHead {
+    margin-top: 20px;
+    color: gray;
+}
+
+#searchHead2 {
+    width: 95vw;
+    text-align: left;
+    margin-top: 20px;
+    color: #FF631A;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+}
+
+#gridCards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    width: 95vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    z-index: 20;
+}
+
+.Cards {
+    background-color: rgb(104, 104, 104);
+
+
+    background: rgb(0, 0, 0);
+    
+background: rgb(0,0,0);
+background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(43,43,43,1) 100%);
+    /* background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(89, 89, 89, 1) 64%, rgba(135, 135, 135, 1) 100%); */
+    border-radius: 20px;
+    border: 2px solid rgb(35, 35, 35);
+
+}
+
+.Cards>img {
+    width: 90%;
+    border-radius: 15px;
+    height: 330px;
+
+    margin: 12px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Cards>div:nth-child(3) {
+    width: 90%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Cards>div:nth-child(3)>p{
+    /* background-color: aqua; */
+    font-size: 20px;
+    /* margin: 5px; */
+
+    text-align: left;
+    color: #FF631A;
+}
+.Cards>div:nth-child(3)>button{
+    width: 40px;
+    height: 40px;
+    border-radius: 300px;
+    border: 2px solid rgb(162, 162, 162);
+    overflow: hidden;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.Cards>div:nth-child(3)>button:hover{
+    background-color: #FF631A;
+    cursor: pointer;
+    border: 1px solid #FF631A;
+}
+.Cards>div:nth-child(3)>button>img{
+    width: 20px;
+    height: 20px;
+}
+.Cards>div:nth-child(3)>h1{
+    width: 50%;
+    background-color: aqua;
+    font-size: 20px;
+    /* margin: 5px; */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    color: #FF631A;;
+}
+
+#plot {
+    width: 90%;
+    font-size: 14px;
+    margin: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    color: gray;
+}
+
+.CardsT {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.CardsT>p:nth-child(1) {
+    color: rgb;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.CardsT>p:nth-child(2) {
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(0, 183, 255);
+    border-radius: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 900px) {
+    #carousel {
+        height: 200px;
+
+    }
+
+    .WebCards {
+        height: 200px;
+    }
+
+    #search {
+        height: 300px;
+    }
+
+    #search>div {
+        align-items: flex-end;
+        padding-bottom: 10px;
+    }
+
+    #searchHead {
+        margin-top: 110px;
+        color: gray;
+    }
+
+}
+
+@media only screen and (min-width: 750px) and (max-width: 1200px) {
+    #gridCards {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 20px;
+        grid-row-gap: 15px;
+        margin-top: 10px;
+    }
+
+    .Cards>img {
+        height: 280px;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 750px) {
+    #gridCards {
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 20px;
+        grid-row-gap: 15px;
+        margin-top: 10px;
+    }
+
+    .Cards>img {
+        height: 280px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #gridCards {
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 20px;
+        grid-row-gap: 15px;
+        margin-top: 10px;
+    }
+
+    .Cards>img {
+        height: 170px;
+    }
+
+    .Cards>p:nth-child(3) {
+        font-size: 15px;
+
+    }
+
+    #plot{
+        font-size: 12px;
+
+    }
+
+    .CardsT>p:nth-child(1) {
+        font-size: 14px;
+    }
+
+    .CardsT>p:nth-child(2) {
+        font-size: 10px;
+    }
+
+    .Cards>div:nth-child(3)>p{
+        font-size: 15px;
+       
+    }
+    .Cards>div:nth-child(3)>button{
+        width: 25px;
+        height: 25px;
+      
+    
+    }
+
+    .Cards>div:nth-child(3)>button>img{
+        width: 10px;
+        height: 10px;
+    }
+}

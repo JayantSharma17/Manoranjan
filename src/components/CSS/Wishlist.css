@@ -1,0 +1,105 @@
+#Wishlist{
+    width: 95vw;
+    min-height: 80vh;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    margin-top: 10px;
+    background-image: repeating-linear-gradient(45deg, rgba(97,97,97,0.1) 0px, rgba(97,97,97,0.1) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, rgb(22,22,22),rgb(22,22,22));
+
+}
+.wishlistCard>img{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    display: block;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 15px;
+}
+.wishlistCard>div{
+    /* background-color: aqua; */
+    display: flex;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+#wishT{
+    color: gray;
+    text-align: center;
+    font-size: 18px;
+
+}
+.wishlistCard>div>button:nth-child(1){
+    width: 70%;
+    font-size: 18px;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    overflow: hidden;
+    
+}
+.wishlistCard>div>button:nth-child(1):hover{
+    border: 1px solid #FF631A;
+
+    background-color: #FF631A;
+    cursor: pointer;
+    
+}
+.wishlistCard>div>button:nth-child(2){
+    width: 30px;
+    height: 30px;
+    border-radius: 300px;
+    border: 1px solid rgb(255, 255, 255);
+    overflow: hidden;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.wishlistCard>div>button:nth-child(2):hover{
+    background-color: #FF631A;
+    cursor: pointer;
+    border: 1px solid #FF631A;
+
+    
+}
+.wishlistCard>div>button:nth-child(2)>img{
+    width: 20px;
+    height: 20px;
+}
+@media only screen and (max-width: 900px) {
+    .wishlistCard>div>button:nth-child(1){
+        width: 60%;
+        font-size: 15px;
+        height: 25px;
+        
+    }
+    .wishlistCard>div>button:nth-child(2){
+        width: 25px;
+        height: 25px;
+    }
+    .wishlistCard>div>button:nth-child(2)>img{
+        width: 15px;
+        height: 15px;
+    }
+    .wishlistCard>div{
+  
+        gap: 5px;
+    }
+    #wishT{
+        font-size: 15 !important;
+    }
+}

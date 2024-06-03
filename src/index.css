@@ -1,0 +1,16 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+  /* font-weight: 500; */
+  font-optical-sizing: auto;
+  font-style: normal;
+  overflow-x: hidden;
+  
+  
+}
+body{
+  background-color: #131313;
+  color: white;
+}

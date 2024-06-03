@@ -1,0 +1,15 @@
+.wcards{
+    background-color: rgba(0, 0, 0, 0.568);
+    width: 100%;
+    color: white;
+    text-align: left;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin: 2px;
+    padding: 5px;
+}
+.wcards:hover{
+    background-color: rgba(0, 0, 0, 0.769) !important;
+    cursor: pointer;
+}
