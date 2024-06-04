@@ -4,8 +4,8 @@
     /* left: 40px;
     right: 40px;
     bottom: 40px; */
-    background-color: rgba(0, 0, 0, 0.263);
-    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.523);
+    /* backdrop-filter: blur(10px); */
     width: 100vw;
     height: 100vh;
 }
@@ -53,13 +53,14 @@
 
 .mcard>div>button:hover:hover {
     cursor: pointer;
+    background-color: rgb(62, 62, 62);
 
 
 }
 
-.mcard>div>button:hover>img {
-    width: 20px;
-    height: 20px;
+.mcard>div>button>img {
+    width: 15px;
+    height: 15px;
 }
 .privacy-options{
     margin-left: auto;

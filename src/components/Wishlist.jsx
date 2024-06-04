@@ -9,11 +9,13 @@ import Modal from 'react-modal';
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import { BaseURL, message } from '../Global'
+import { BallTriangle } from 'react-loader-spinner'
 
 const Wishlist = () => {
 
     const [modalIsOpen, setIsOpen] = useState(false);
     const [privacy, setPrivacy] = useState('');
+    const [loader, setLoader] = useState(true);
     const [name, setName] = useState('');
     const [wishlist, setWishlist] = useState([]);
 
@@ -34,13 +36,13 @@ const Wishlist = () => {
         }
     }
     const getWishlist = async () => {
-        try{
+        try {
             const userId = localStorage.getItem('userId');
-            const res=await axios.post(`${BaseURL}/wishlists`, { userId})
+            const res = await axios.post(`${BaseURL}/wishlists`, { userId })
             console.log(res.data.wishlistData)
             setWishlist(res.data.wishlistData)
         }
-        catch(e){
+        catch (e) {
             console.log(e)
         }
     }
@@ -52,14 +54,18 @@ const Wishlist = () => {
             message('All fields are required.')
             return
         }
+        setLoader(true)
         try {
             const res = await axios.post(`${BaseURL}/create-wishlist`, { userId, name, status: privacy })
             console.log(res)
+            setLoader(false)
             message('Playlist created')
+            closeModal();
 
 
         }
         catch (e) {
+            setLoader(false)
             console.log(e)
             message('Network Error')
 
@@ -97,14 +103,14 @@ const Wishlist = () => {
                     </div>
                 </div>
 
-                {wishlist.map((item,index) => {
+                {wishlist.map((item, index) => {
                     return (
                         <div key={index} className='wishlistCard'>
                             <img src={film2} alt="" />
                             <p id='wishT' style={{ fontSize: '15px' }}>{item.name}</p>
 
                             <div>
-                                <button onClick={()=>{navigate(`/movies/${item._id}`)}}>View</button>
+                                <button onClick={() => { navigate(`/movies/${item._id}`) }}>View</button>
                                 <button><img src={setting} alt="" /></button>
                             </div>
                         </div>
@@ -150,6 +156,16 @@ const Wishlist = () => {
                             Public
                         </label>
                     </div>
+                    <div style={{ marginLeft: 'auto', marginRight: 'auto', width: '100%', display: 'flex', justifyContent: 'center' }}><BallTriangle
+                        height={50}
+                        width={50}
+                        radius={5}
+                        color="white"
+                        ariaLabel="ball-triangle-loading"
+                        wrapperStyle={{}}
+                        wrapperClass=""
+                        visible={loader}
+                    /></div>
 
                     <button onClick={createWishList}>Create</button>
                 </div>
