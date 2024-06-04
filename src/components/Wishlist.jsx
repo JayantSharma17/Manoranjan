@@ -29,6 +29,8 @@ const Wishlist = () => {
             setTimeout(() => {
                 navigate('/login');
             }, 2000)
+            message('Login to your account first')
+
         }
     }
     const getWishlist = async () => {

@@ -52,7 +52,7 @@ const Dashboard = () => {
 
 
       }, 2000)
-      // message('Login to your account first')
+      message('Login to your account first')
 
     }
   }
