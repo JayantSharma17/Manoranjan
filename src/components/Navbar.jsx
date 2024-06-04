@@ -52,7 +52,7 @@ const Navbar = () => {
         <ul>
           <li><Link to="/">Dashboard</Link></li>
           <li><Link to="/wishlist">WishList</Link></li>
-          <li><Link to="footer">Connect</Link></li>
+          <li><Link to="/connect">Connect</Link></li>
         </ul>
 
         <div id='profileButton'>
@@ -75,7 +75,7 @@ const Navbar = () => {
           <Link onClick={openMenu} to="/wishlist"><li>WishList</li></Link>
           <div style={{ height: '1px', width: '100vw', backgroundColor: 'gray' }}></div>
 
-          <Link onClick={openMenu} to="footer"><li>Connect</li></Link>
+          <Link onClick={openMenu} to="/connect"><li>Connect</li></Link>
           <div style={{ height: '1px', width: '100vw', backgroundColor: 'gray' }}></div>
 
           <li>{login === false ? <button onClick={() => { navigate('/login') }}>Login</button> :

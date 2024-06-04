@@ -9,6 +9,7 @@ import Register from './components/Register';
 import { Toaster } from 'react-hot-toast';
 import Movies from './components/Movies';
 import Notfound from './components/Notfound';
+import Connect from './components/Connect';
 
 
 // Create context for navbar reloading
@@ -28,6 +29,7 @@ const App = () => {
           <Route exact path='/login' Component={Login} />
           <Route exact path='/register' Component={Register} />
           <Route exact path='/movies/:wishlistId' Component={Movies} />
+          <Route exact path='/connect' Component={Connect} />
           <Route path='/*' Component={Notfound} />
           {/* <Route exact path='/repo-details/:username/:id' Component={Repo} />
           <Route exact path='/repo-stats/:username/:reponame/:repoId' Component={Repository} /> */}
