@@ -15,7 +15,7 @@ const Wishlist = () => {
 
     const [modalIsOpen, setIsOpen] = useState(false);
     const [privacy, setPrivacy] = useState('');
-    const [loader, setLoader] = useState(true);
+    const [loader, setLoader] = useState(false);
     const [name, setName] = useState('');
     const [wishlist, setWishlist] = useState([]);
 
