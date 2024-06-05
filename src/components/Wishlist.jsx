@@ -16,6 +16,7 @@ const Wishlist = () => {
     const [modalIsOpen, setIsOpen] = useState(false);
     const [privacy, setPrivacy] = useState('');
     const [loader, setLoader] = useState(false);
+    const [loader2, setLoader2] = useState(true);
     const [name, setName] = useState('');
     const [wishlist, setWishlist] = useState([]);
 
@@ -37,12 +38,17 @@ const Wishlist = () => {
     }
     const getWishlist = async () => {
         try {
+            setLoader2(true)
             const userId = localStorage.getItem('userId');
             const res = await axios.post(`${BaseURL}/wishlists`, { userId })
             console.log(res.data.wishlistData)
             setWishlist(res.data.wishlistData)
+            setLoader2(false)
+
         }
         catch (e) {
+            setLoader2(false)
+
             console.log(e)
         }
     }
@@ -102,6 +108,8 @@ const Wishlist = () => {
                         {/* <button><img src={setting} alt="" /></button> */}
                     </div>
                 </div>
+                
+                
 
                 {wishlist.map((item, index) => {
                     return (
@@ -118,6 +126,16 @@ const Wishlist = () => {
                 })}
 
             </div>
+            {loader2 && <div style={{ marginLeft: 'auto', marginRight: 'auto', width: '100%', display: 'flex', justifyContent: 'center' }}><BallTriangle
+                        height={70}
+                        width={70}
+                        radius={5}
+                        color="white"
+                        ariaLabel="ball-triangle-loading"
+                        wrapperStyle={{}}
+                        wrapperClass=""
+                        visible={loader2}
+                    /></div>}
 
 
             <Modal
